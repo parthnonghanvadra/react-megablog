@@ -16,6 +16,7 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
             apiKey={conf.appwriteRTEId}
             initialValue={defaultValue}
             init={{
+              readonly: false,
               initialValue: defaultValue,
               height: 500,
               menubar: true,
